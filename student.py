@@ -1,9 +1,10 @@
+from random import randint
+
 class Student:
-    def __init__(self, name, number, group):
+    def __init__(self, name, group):
         self.name = name
-        self.number = number
+        self.id = randint(10000, 99999)
         self.group = group
 
     def printData(self):
-        print('Dados de ', self.name)
-        print('Número: ', self.number, ' | ', 'Turma: ', self.group)
+        print('   ' + str(self.id ) + ' |   ' + self.group + '   | ' + self.name)
